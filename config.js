@@ -1,6 +1,16 @@
-/* 公開情報のみ。企業の内部情報・秘密鍵はここに絶対に記載しないこと。 */
+
+/*
+ * 沿線キャリア｜求人検索サイト設定
+ * 企業の内部情報・秘密鍵は記載しないこと
+ */
+
 window.ENSEN_CONFIG = {
-  publicApiUrl: '', // GASの公開専用JSONエンドポイント。未設定時は求人0件表示
-  lineOfficialUrl: '', // 例 https://lin.ee/XXXXXX （LINE公式アカウントの実URL）
+  // 求人公開API
+  publicApiUrl: 'https://script.google.com/macros/s/AKfycbwfEfjlSrELKMgvSuETFP9L6ScJvDq1fhmL7edLTzQkdAjIWRoavJ6ZCi_wbUu37So/exec',
+
+  // LINE公式アカウント（後で設定）
+  lineOfficialUrl: '',
+
+  // 働き方タイプ診断
   diagnosisUrl: 'https://tagamianthurium2023-debug.github.io/ensen-career-test/'
 };
