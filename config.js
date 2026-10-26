@@ -1,4 +1,3 @@
-
 /*
  * 沿線キャリア｜求人検索サイト設定
  * 企業の内部情報・秘密鍵は記載しないこと
@@ -12,5 +11,5 @@ window.ENSEN_CONFIG = {
   lineOfficialUrl: 'https://lin.ee/U4bFhFLe',
 
   // 働き方タイプ診断
-  diagnosisUrl: 'https://tagamianthurium2023-debug.github.io/ensen-career-test/'
+  diagnosisUrl: 'https://test.ensen-career.jp/'
 };
