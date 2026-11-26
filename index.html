@@ -4,159 +4,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#f6fafb">
+  <meta name="theme-color" content="#009BBF">
   <meta name="description" content="沿線キャリア｜東西線・東葉高速線沿線で、好きな街で長く働く。駅から探せるお仕事とLINE相談。">
-
   <title>沿線キャリア｜好きな街で、長く働く。</title>
 
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" href="logo.png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=M+PLUS+1p:wght@500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* =========================================
-       沿線キャリア 正式ロゴ・トップ画像
-       ========================================= */
-
-    .brand {
-      display: flex;
-      align-items: center;
-      flex-shrink: 0;
-      gap: 10px;
-    }
-
-    .brand-logo {
-      display: block;
-      width: auto;
-      height: 74px;
-      max-width: 150px;
-      object-fit: contain;
-    }
-
-    .header {
-      height: 96px;
-    }
-
-    html {
-      scroll-padding-top: 106px;
-    }
-
-    .hero-image {
-      background-image:
-        linear-gradient(
-          180deg,
-          rgba(167, 203, 210, 0.04),
-          rgba(185, 212, 209, 0.10)
-        ),
-        url("hero-tozai.png");
-
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
-
-    @media (max-width: 900px) {
-      .head-inner {
-        gap: 16px;
-      }
-
-      .brand-logo {
-        height: 68px;
-        max-width: 130px;
-      }
-
-      .desktop-nav {
-        gap: 12px;
-        font-size: 11px;
-      }
-
-      .head-cta {
-        padding: 12px 15px;
-        gap: 10px;
-        white-space: nowrap;
-      }
-    }
-
-    @media (min-width: 721px) and (max-width: 820px) {
-      .desktop-nav {
-        gap: 8px;
-        font-size: 10px;
-      }
-
-      .head-inner {
-        gap: 10px;
-      }
-
-      .head-cta {
-        padding: 10px 12px;
-        font-size: 11px;
-      }
-
-      .brand-logo {
-        height: 62px;
-        max-width: 110px;
-      }
-    }
-
-    @media (max-width: 720px) {
-      .header {
-        height: 78px;
-      }
-
-      html {
-        scroll-padding-top: 88px;
-      }
-
-      .brand-logo {
-        height: 64px;
-        max-width: 140px;
-      }
-
-      .hero-image {
-        background-position: center 55%;
-      }
-    }
-  </style>
 </head>
 
 <body>
 
 <header class="header">
   <div class="shell head-inner">
-
     <a href="#home" class="brand" aria-label="沿線キャリア ホーム">
-      <img
-        src="logo.png"
-        alt="沿線キャリア"
-        class="brand-logo"
-      >
+      <img src="logo.png" alt="沿線キャリア" class="brand-logo">
     </a>
 
     <nav class="desktop-nav" aria-label="メインメニュー">
       <a href="#search">求人を探す</a>
       <a href="#about">沿線キャリアとは</a>
-
-      <a href="https://tagamianthurium2023-debug.github.io/ensen-career-test/"
-         target="_blank"
-         rel="noopener">
-        働き方診断 <span aria-hidden="true">↗</span>
-      </a>
-
-      <a href="#favorites">
-        お気に入り
-        <span class="fav-count" id="favCount">0</span>
-      </a>
+      <a href="https://tagamianthurium2023-debug.github.io/ensen-career-test/" target="_blank" rel="noopener">働き方診断 ↗</a>
+      <a href="#favorites">お気に入り <span class="fav-count" id="favCount">0</span></a>
     </nav>
 
     <button class="head-cta" data-line="general">
       LINEで相談 <span>↗</span>
     </button>
-
   </div>
 </header>
 
@@ -168,8 +45,9 @@
       <div class="hero-copy">
 
         <div class="eyebrow">
-          <span class="eyebrow-dot"></span>
-          TOKYO METRO TOZAI LINE & TOYO RAPID
+          <span class="line-symbol">T</span>
+          <span class="line-symbol green">TR</span>
+          <span>暮らしと仕事をつなぐ、沿線キャリア。</span>
         </div>
 
         <h1>
@@ -179,13 +57,14 @@
 
         <p>
           通い慣れた駅、いつもの街並み。<br>
-          暮らしに寄り添う働き方を、沿線から見つけよう。
+          暮らしに寄り添う働き方を、<br>
+          沿線から見つけよう。
         </p>
 
         <div class="hero-chips">
           <span>東西線・東葉高速線</span>
           <span>駅から探せる求人</span>
-          <span>相談はLINEで気軽に</span>
+          <span>LINEで気軽に相談</span>
         </div>
 
         <a class="hero-scroll" href="#search">
@@ -195,37 +74,32 @@
       </div>
 
       <div class="hero-visual">
-
-        <div
-          class="hero-image"
-          role="img"
-          aria-label="日本橋の街並みを参考にしたイメージ画像"
-        ></div>
+        <div class="hero-image" role="img" aria-label="日本橋の街並みを参考にしたイメージ画像"></div>
 
         <div class="visual-card">
-          <span class="mini-icon">⌁</span>
+          <span class="mini-icon">◎</span>
           <span>
-            <strong>
-              いつもの街が、<br>
-              新しいスタート地点に。
-            </strong>
+            <strong>いつもの街が、<br>新しいスタート地点に。</strong>
             <small>YOUR TOWN, YOUR NEXT STEP.</small>
           </span>
         </div>
 
-        <span class="visual-caption">
-          A CAREER THAT FITS YOUR LIFE
-        </span>
-
+        <span class="visual-caption">NIHONBASHI, TOKYO</span>
       </div>
 
     </div>
 
-    <div class="hero-number shell">
-      <span>01 — FIND YOUR PLACE</span>
+    <div class="shell hero-number">
+      <span>ENSEN CAREER / TOKYO EAST AREA</span>
       <span>暮らしのそばに、次のキャリア。</span>
     </div>
 
+    <div class="route-decoration" aria-hidden="true">
+      <span class="route-orange"></span>
+      <span class="route-yellow"></span>
+      <span class="route-blue"></span>
+      <span class="route-green"></span>
+    </div>
   </section>
 
   <section class="search-section shell" id="search">
@@ -234,16 +108,10 @@
 
       <div class="section-heading">
         <div>
-          <span class="kicker">FIND YOUR WORK</span>
-          <h2>
-            あなたらしい働き方を、<br class="mobile-only">
-            探してみよう。
-          </h2>
+          <span class="kicker">01 / FIND YOUR WORK</span>
+          <h2>あなたに合う仕事を探そう。</h2>
         </div>
-
-        <span class="section-aside">
-          条件からお仕事を検索
-        </span>
+        <span class="section-aside">条件からお仕事を検索</span>
       </div>
 
       <form id="searchForm">
@@ -252,10 +120,8 @@
 
           <label class="field">
             <span class="field-label">
-              <span class="field-no">01</span>
-              勤務地・駅
+              <span class="field-no">01</span> 勤務地・駅
             </span>
-
             <button type="button" id="stationOpen" class="field-button">
               <span id="stationLabel">駅を選ぶ（複数選択可）</span>
               <span class="chevron">⌄</span>
@@ -264,10 +130,8 @@
 
           <label class="field">
             <span class="field-label">
-              <span class="field-no">02</span>
-              職種
+              <span class="field-no">02</span> 職種
             </span>
-
             <select id="occupation">
               <option value="">すべての職種</option>
             </select>
@@ -275,10 +139,8 @@
 
           <label class="field">
             <span class="field-label">
-              <span class="field-no">03</span>
-              雇用形態
+              <span class="field-no">03</span> 雇用形態
             </span>
-
             <select id="employment">
               <option value="">すべての雇用形態</option>
               <option>正社員</option>
@@ -293,20 +155,12 @@
         </div>
 
         <div class="search-actions">
-
-          <button
-            class="secondary-btn"
-            id="advancedToggle"
-            type="button"
-            aria-expanded="false"
-          >
+          <button class="secondary-btn" id="advancedToggle" type="button" aria-expanded="false">
             ＋ 詳細条件を設定する
           </button>
-
           <button class="primary-btn" type="submit">
             この条件で検索 <span>→</span>
           </button>
-
         </div>
 
         <div class="advanced" id="advanced" hidden>
@@ -359,29 +213,20 @@
           <div id="tagFilters"></div>
 
           <div class="advanced-bottom">
-            <button type="button" class="text-btn" id="resetFilters">
-              条件をクリア
-            </button>
+            <button type="button" class="text-btn" id="resetFilters">条件をクリア</button>
           </div>
 
         </div>
-
       </form>
-
     </div>
-
   </section>
 
   <section class="results-section shell" id="results">
 
     <div class="section-heading results-head">
-
       <div>
-        <span class="kicker">JOB LISTINGS</span>
-        <h2>
-          お仕事を探す
-          <span class="result-count" id="resultCount">0件</span>
-        </h2>
+        <span class="kicker">02 / JOB LISTINGS</span>
+        <h2>お仕事を探す <span class="result-count" id="resultCount">読み込み中</span></h2>
       </div>
 
       <div class="sort-row">
@@ -393,7 +238,6 @@
           <option value="recommended">おすすめ順</option>
         </select>
       </div>
-
     </div>
 
     <div id="activeChips" class="active-chips"></div>
@@ -401,32 +245,19 @@
     <div id="pagination" class="pagination"></div>
 
     <div id="emptyState" class="empty-state" hidden>
-
-      <div class="empty-icon">⌁</div>
-
+      <div class="empty-icon">◎</div>
       <h3>今は条件に合う求人が見つかりませんでした。</h3>
-
       <p>
         駅や働き方の条件を少し広げてみるか、<br>
         希望のお仕事をLINEで相談してみませんか？
       </p>
 
       <div class="empty-actions">
-
-        <button class="outline-btn" id="loosenFilters">
-          条件を広げる
-        </button>
-
-        <button class="primary-btn" data-line="general">
-          LINEで仕事を相談する ↗
-        </button>
-
+        <button class="outline-btn" id="loosenFilters">条件を広げる</button>
+        <button class="primary-btn" data-line="general">LINEで仕事を相談する ↗</button>
       </div>
 
-      <small>
-        求人の掲載準備中でも、お仕事探しのご相談を受け付けています。
-      </small>
-
+      <small>求人の掲載準備中でも、お仕事探しのご相談を受け付けています。</small>
     </div>
 
   </section>
@@ -434,34 +265,22 @@
   <section class="diagnosis-section">
 
     <div class="shell diagnosis-grid">
-
       <div>
-
-        <span class="kicker">FIND YOUR STRENGTHS</span>
-
-        <h2>
-          どんな働き方が、<br>
-          自分に合っているんだろう。
-        </h2>
+        <span class="kicker">03 / DISCOVER YOURSELF</span>
+        <h2>自分に合う働き方、<br>知っていますか？</h2>
 
         <p>
-          「得意なことがわからない」「仕事選びに迷っている」。<br>
+          「得意なことがわからない」<br>
+          「どんな仕事が自分に合うんだろう」<br>
           そんなときは、まず自分を知るところから。
         </p>
 
-        <a
-          class="primary-btn"
-          href="https://tagamianthurium2023-debug.github.io/ensen-career-test/"
-          target="_blank"
-          rel="noopener"
-        >
+        <a class="primary-btn" href="https://tagamianthurium2023-debug.github.io/ensen-career-test/" target="_blank" rel="noopener">
           働き方タイプ診断をする <span>↗</span>
         </a>
-
       </div>
 
       <div class="diagnosis-art">
-
         <div class="art-circle">
           YOUR<br>
           <strong>NEXT</strong><br>
@@ -472,9 +291,7 @@
           自分らしさを、<br>
           仕事選びのヒントに。
         </div>
-
       </div>
-
     </div>
 
   </section>
@@ -482,17 +299,12 @@
   <section class="about-section shell" id="about">
 
     <div class="about-grid">
-
       <div>
-        <span class="kicker">ABOUT ENSEN CAREER</span>
-        <h2>
-          いつもの街で、<br>
-          これからの働き方を。
-        </h2>
+        <span class="kicker">04 / ABOUT ENSEN CAREER</span>
+        <h2>いつもの街で、<br>これからの働き方を。</h2>
       </div>
 
       <div>
-
         <p>
           沿線キャリアは、東西線・東葉高速線沿線でのお仕事探しをお手伝いするキャリアサポートサービスです。
         </p>
@@ -504,9 +316,7 @@
         <button class="inline-link" data-line="general">
           まずはLINEで相談する <span>↗</span>
         </button>
-
       </div>
-
     </div>
 
   </section>
@@ -515,7 +325,7 @@
 
     <div class="section-heading">
       <div>
-        <span class="kicker">SAVED JOBS</span>
+        <span class="kicker">05 / SAVED JOBS</span>
         <h2>お気に入りの求人</h2>
       </div>
     </div>
@@ -532,6 +342,13 @@
 
 <footer class="footer">
 
+  <div class="route-decoration" aria-hidden="true">
+    <span class="route-orange"></span>
+    <span class="route-yellow"></span>
+    <span class="route-blue"></span>
+    <span class="route-green"></span>
+  </div>
+
   <div class="shell footer-grid">
 
     <div>
@@ -542,19 +359,10 @@
     </div>
 
     <div>
-
       <a href="#search">求人を探す</a>
-
-      <a
-        href="https://tagamianthurium2023-debug.github.io/ensen-career-test/"
-        target="_blank"
-        rel="noopener"
-      >
-        働き方診断
-      </a>
-
+      <a href="#about">沿線キャリアとは</a>
+      <a href="https://tagamianthurium2023-debug.github.io/ensen-career-test/" target="_blank" rel="noopener">働き方診断</a>
       <button data-line="general">LINE相談</button>
-
     </div>
 
   </div>
@@ -567,23 +375,10 @@
 </footer>
 
 <nav class="mobile-nav" aria-label="スマートフォンメニュー">
-
-  <a href="#home">
-    <span>⌂</span>ホーム
-  </a>
-
-  <a href="#search">
-    <span>⌕</span>求人検索
-  </a>
-
-  <a href="#favorites">
-    <span>♡</span>お気に入り
-  </a>
-
-  <button data-line="general">
-    <span>☏</span>LINE相談
-  </button>
-
+  <a href="#home"><span>⌂</span>ホーム</a>
+  <a href="#search"><span>⌕</span>求人検索</a>
+  <a href="#favorites"><span>♡</span>お気に入り</a>
+  <button data-line="general"><span>☏</span>LINE相談</button>
 </nav>
 
 <button id="mobileRefine" class="mobile-refine" hidden>
@@ -593,44 +388,21 @@
 <dialog id="stationDialog" class="modal">
 
   <div class="modal-head">
-
     <div>
       <strong>駅を選ぶ</strong>
       <small>複数の駅を選択できます</small>
     </div>
-
-    <button
-      class="icon-btn"
-      data-close="stationDialog"
-      aria-label="閉じる"
-    >
-      ×
-    </button>
-
+    <button class="icon-btn" data-close="stationDialog" aria-label="閉じる">×</button>
   </div>
 
   <div class="modal-body">
-
-    <input
-      id="stationSearch"
-      class="station-search"
-      placeholder="駅名で検索"
-    >
-
+    <input id="stationSearch" class="station-search" placeholder="駅名で検索">
     <div id="stationOptions"></div>
-
   </div>
 
   <div class="modal-footer">
-
-    <button class="text-btn" id="stationClear">
-      選択解除
-    </button>
-
-    <button class="primary-btn" id="stationDone">
-      この駅で検索する
-    </button>
-
+    <button class="text-btn" id="stationClear">選択解除</button>
+    <button class="primary-btn" id="stationDone">この駅で検索する</button>
   </div>
 
 </dialog>
@@ -638,38 +410,19 @@
 <dialog id="jobDialog" class="modal detail-modal">
 
   <div class="modal-head">
-
     <div>
       <small>ENSEN CAREER / JOB DETAIL</small>
       <strong id="detailHeader">求人詳細</strong>
     </div>
-
-    <button
-      class="icon-btn"
-      data-close="jobDialog"
-      aria-label="閉じる"
-    >
-      ×
-    </button>
-
+    <button class="icon-btn" data-close="jobDialog" aria-label="閉じる">×</button>
   </div>
 
   <div class="detail-scroll" id="detailContent"></div>
 
   <div class="detail-actions">
-
-    <button id="detailFavorite" class="outline-btn">
-      ♡ 保存
-    </button>
-
-    <button id="detailShare" class="outline-btn">
-      共有
-    </button>
-
-    <button id="detailApply" class="primary-btn">
-      応募についてLINEで相談 ↗
-    </button>
-
+    <button id="detailFavorite" class="outline-btn">♡ 保存</button>
+    <button id="detailShare" class="outline-btn">共有</button>
+    <button id="detailApply" class="primary-btn">応募についてLINEで相談 ↗</button>
   </div>
 
 </dialog>
